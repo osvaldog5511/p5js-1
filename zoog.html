@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+    <script>
+      function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+strokeWeight(3)
+stroke(20) //Thickness of black outline
+fill(28,201,42) //green face
+ellipse(200,120,90,90) //Head
+fill(22, 157, 229) //blue eyes
+ellipse(150,120,20,20) //Left eye
+ellipse(250,120,20,20) //Right eye
+line(180,145,220,145) //Bottom part of mouth
+line(180,145,175,140) //Left part of mouth
+line(225,140,220,145) //Right part of mouth
+line(175,140,225,140) //Top part of mouth
+point(150,120) //Left eyeball
+point(250,120) //Right eyeball
+line(155,110,140,100) //Left eyebrow
+line(245,110,260,100) //Right eyebrow
+fill(145, 92, 31) //Brown
+rect(175,165,50,100) //Body
+textSize(50) //Size of 6
+fill(255,255,255) //White
+text("6", 187,220) //Text on shirt
+fill(28,201,42) //
+rect(155,170,25,75) //Left arm
+rect(220,170,25,75) //Right arm
+ellipse(185,290,25,50) //Left leg
+ellipse(215,290,25,50) //Right arm
+}
+    </script>
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/BenjaminN6094/p5js/blob/master/FILENAME.html?footer=0"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+
+
+</html>
